@@ -1,0 +1,65 @@
+<!-- Write a JavaScript program to validate user data given from the HTML form:
+a. Username must contain a minimum of 8 characters.
+b. Password must contain at least one digit and one special character, and its length should be between 8 and 12 characters. 
+c. Password and Confirm Password must be the same. 
+d. Age must be greater than 18 years (calculate from Date of Birth). 
+e. Enrollment number must contain exactly 11 digits. 
+f. Validate the email format.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB-9(1)</title>
+</head>
+<body>
+	<form name="myform">
+		<table>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" name="username"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" name="password"></td>
+			</tr>
+			<tr>
+				<td>Confirm Password</td>
+				<td><input type="password" name="confirm"></td>
+			</tr>
+			<tr>
+				<td>Age</td>
+				<td><input type="number" name="age"></td>
+			</tr>
+			<tr>
+				<td>Enrollment Number</td>
+				<td><input type="Number" name="enrollment"></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td><button onclick="cd()">Submit</button></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
+<script>
+	function cd()
+	{
+		var a=document.forms['myform'];
+		var b=a.username.value;
+		var c=a.password.value;
+		var d=a.confirm.value;
+		var e=a.age.value;
+		var f=a.enrollment.value;
+
+		var regex=/^[a-z]+$/;
+		if(regex.test(cd))
+		{
+			alert("Valid");
+		}
+		else
+		{
+			alert("Invalid User Name");
+		}
+	}
+</script>
