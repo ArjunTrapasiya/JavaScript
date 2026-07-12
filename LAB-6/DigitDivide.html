@@ -1,0 +1,24 @@
+//Write a JavaScript program to take a 2-digit number and separate its digits. Then,multiply the first digit by itself as many times as indicated by the second digit. (B) For example, if the number is 23, it should be separated into 2 and 3. Then, 2 should be multiplied by itself 3 times (2 × 2 × 2 = 8).
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+<script>
+	var a=parseInt(prompt("Enter Two Digit Number"));
+	var division=parseInt(a/10);
+	var modulo=parseInt(a%10);
+	var ans=1;
+	a=Math.pow(division,modulo);
+	alert(a);
+
+	for(i=1;i<modulo;i++)
+	{
+		ans=division*ans;
+	}
+	console.log(ans);
+</script>
+</html>

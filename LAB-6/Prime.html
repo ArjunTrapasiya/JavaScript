@@ -1,0 +1,29 @@
+//Write a JavaScript program to display all prime numbers between a given range of numbers.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime Find Between 2 Numbers</title>
+</head>
+<body>
+
+</body>
+<script>
+	var start=parseInt(prompt("Enter Start Number: "));
+	var end=parseInt(prompt("Enter End Number: "));
+
+
+	for(i=start;i<=end;i++)
+	{
+		var flag=0;
+		for(var j=1;j<=i;j++)
+		{
+			if(i%j==0)
+			{
+				flag++;
+			}
+		}
+		if(flag==2)
+			console.log(i);
+	}
+</script>
+</html>

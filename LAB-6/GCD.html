@@ -1,0 +1,23 @@
+//Write a JavaScript program to print the GCD (Greatest Common Divisor) of two numbers.
+<<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB 8</title>
+</head>
+<body>
+</body>
+<script>
+	var a=parseInt(prompt("Enter 1st Number."));
+	var b=parseInt(prompt("Enter 2nd Number.")); 
+	var gcd=0;
+
+	for(var i=1;i<=b;i++)
+	{
+		if(a%i==0 && b%i==0)
+		{
+			gcd=i;
+		}
+	}
+	console.log(gcd);
+</script>
+</html>  
