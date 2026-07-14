@@ -1,0 +1,41 @@
+<!--   Write a JavaScript program to create a simple calculator using popup boxes.-->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+</head>
+<body>
+</body>
+<script>
+	var a=parseInt(prompt("Enter 1st Number: "));
+	var b=parseInt(prompt("Enter 2nd Number: "));
+	var sign=prompt("Select Operation(+,-,*,/,%): ");
+
+	if(sign=='+')
+	{
+		alert(a+b);
+	}
+	else if(sign=='-')
+	{
+		alert(a-b);
+	}
+	else if(sign=='*')
+	{
+		alert(a*b);
+	}
+	else if(sign=='/')
+	{
+		alert(a/b);
+	}
+	else if(sign=='%')
+	{
+		alert(a%b);
+	}
+	else
+	{
+		alert("Inavlid Choice");
+	}
+
+
+</script>
+</html>

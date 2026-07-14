@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+<script>
+	function isArmstrong(num) {
+    // Convert to string to easily count digits and loop
+    const digits = num.toString();
+    const k = digits.length;
+    let sum = 0;
+
+    for (let char of digits) {
+        sum += Math.pow(parseInt(char), k);
+    }
+
+    return sum === num;
+}
+
+// Test cases
+console.log(isArmstrong(153));  // true
+console.log(isArmstrong(1634)); // true
+console.log(isArmstrong(123));  // false
+
+</script>
+</html>

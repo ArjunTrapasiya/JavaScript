@@ -1,0 +1,26 @@
+<!-- Write a JavaScript program to check whether a given number is a palindrome or not using a popup box. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Palindrome</title>
+</head>
+<body>
+</body>
+<script>
+
+let num = prompt("Enter a number:");
+let original = num;
+let reversed = "";
+
+for (let i = num.length - 1; i >= 0; i--) {
+    reversed += num[i];
+}
+
+if (original === reversed) {
+    alert(original + " is a Palindrome.");
+} else {
+    alert(original + " is Not a Palindrome.");
+}
+
+</script>
+</html>
