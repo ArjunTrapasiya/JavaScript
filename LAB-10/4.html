@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB 10_4</title>
+	<style type="text/css">
+		#mydiv{
+			height: 200px;
+			width: 200px;
+			border: 2px solid green;
+			border-radius: 50%;
+		}
+		
+	</style>
+	
+
+</head>
+<body>
+	<div id="mydiv"></div>
+	<script type="text/javascript">
+		var a=document.getElementById('mydiv');
+		var c=["red","yellow","green","pink","black","orange","blue","purple","black","grey","white","brown"];
+		var nc=0;
+
+		setInterval("a.style.backgroundColor=c[nc++ % c.length]",500);
+	</script>
+</body>
+</html>
