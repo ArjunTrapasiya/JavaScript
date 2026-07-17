@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body id="body">
+
+	<form id="form">
+		
+		Gender:<input type="radio" name="a" onclick=
+		"male()">Male
+		<input type="radio" name="a" onclick=
+		"female()">Female
+
+	</form>
+
+<script>
+
+	function male()
+	{
+		var body=document.getElementById('body');
+		body.style.backgroundColor='pink'
+	}
+
+	function female()
+	{
+		var body=document.getElementById('body');
+		body.style.backgroundColor='Red'
+	}
+
+</script>
+
+</body>
+</html>

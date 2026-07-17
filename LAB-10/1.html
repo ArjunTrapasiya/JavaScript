@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB 10</title>
+</head>
+<body id="body" onclick="ab()">
+	<button  style="background-color: transparent; border: none;">Cilck here to change Color!</button>
+</body>
+<script>
+	var n=0;
+	 function ab()
+	 {
+	 	var body = document.getElementById('body');
+	 	if(n%2==0)
+	 	{
+	 		body.style.backgroundColor='red'
+	 	}
+	 	else
+	 	{
+	 		body.style.backgroundColor='blue'
+	 	}
+
+	 	n++;
+	 }
+</script>
+</html>
