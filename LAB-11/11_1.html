@@ -1,0 +1,19 @@
+<!-- 1. Create a webpage that changes text content when a button is clicked. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>On Button Click Text Change</title>
+</head>
+<body>
+	<h1 id="h">Hello :)</h1>
+	<button onclick="ab()">Don't Click Me!</button>
+
+	<script>
+		function ab(){
+			document.getElementById("h").innerHTML="I said Don't Click!!!!!."
+		}
+	</script>
+</body>
+</html>

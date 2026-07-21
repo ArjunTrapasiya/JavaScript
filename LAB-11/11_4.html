@@ -1,0 +1,19 @@
+<!-- Take input from a user (name) and display a greeting message using DOM. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display a Greeting Message</title>
+</head>
+<body>
+	
+	Name <input type="text" name="" id="name">
+	<button onclick="wc()">Send</button>
+</body>
+<script type="text/javascript">
+		function wc(){
+		var ca=document.getElementById('name');
+		ca=ca.value;
+		alert(`Welcome ${ca}.`);
+		}
+	</script>
+</html>

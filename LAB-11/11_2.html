@@ -1,0 +1,27 @@
+<!-- Create a page that changes the background color of the webpage using a button.  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB 10_1</title>
+</head>
+<body id="body" onclick="ab()">
+	<button  style="background-color: transparent; border: none;">Cilck here to change Color!</button>
+</body>
+<script>
+	var n=0;
+	 function ab()
+	 {
+	 	var body = document.getElementById('body');
+	 	if(n%2==0)
+	 	{
+	 		body.style.backgroundColor='red'
+	 	}
+	 	else
+	 	{
+	 		body.style.backgroundColor='yellow'
+	 	}
+
+	 	n++;
+	 }
+</script>
+</html>
