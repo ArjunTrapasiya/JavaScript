@@ -1,0 +1,41 @@
+<!--  Write a JavaScript program that handles the following mouse events. Add the
+necessary HTML elements: (B)
+a. If the mouse is moved over the heading, its color should change to yellow, and
+when the mouse moves out, it should change to black.
+b. If the “Find Time” button is clicked, display the current date and time.
+c. If the button named “Red” is clicked, the background color should change to red.
+d. If the button named “Green” is clicked, the background color should change to green. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>LAB 12-4</title>
+</head>
+<body id="bdy">
+	<h1 id="t"></h1>
+	<button onclick="red()">Red</button>
+	<button onclick="green()">Green</button>
+	<button onclick="time()">Click to get Time</button>
+	<h1 id="h1" onmouseover="over()" onmouseout="out()" style="color: purple; text-align: center;">Heading</h1>
+</body>
+<script>
+	function red()
+	{
+		bdy.style.backgroundColor="red";
+	}
+	function green()
+	{
+		bdy.style.backgroundColor='green';
+	}
+	function over(){
+		h1.style.color='yellow';
+	}
+	function out(){
+		h1.style.color='black';
+	}
+	function time(){
+		const now= new Date();
+		document.getElementById('t').innerHTML=now;
+	}
+</script>
+</html>

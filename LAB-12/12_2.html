@@ -1,0 +1,20 @@
+<!--  Write a program for the following effect: If the mouse is moved over the heading, change the font color to “red”, and if the mouse moves out of the heading, change it back to “black”.  -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Change The Colour Whenever Mouse Over The Button</title>
+</head>
+<body id="bdy">
+	<button onmouseout="out()" onmouseover="over()">Mouse Hover Here!!!</button>
+</body>
+<script>
+	function out()
+	{
+		bdy.style.backgroundColor="black";
+	}
+	function over()
+	{
+		bdy.style.backgroundColor="red";
+	}
+</script>
+</html>

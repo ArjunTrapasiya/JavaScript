@@ -1,0 +1,61 @@
+<!-- Write a program to recognize which mouse event is fired. -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>All Mouse Event Recognize</title>
+</head>
+<body id="bdy">
+	<button onclick="one()">Click One Time</button>
+	<button ondblclick="doubleclick()">Click Two Time</button>
+	<button onmousedown="down()">Click Mouse To See Down</button>
+	<button onmouseup="up()">Click Mouse To See Up</button>
+	<button onmousemove="move()">Mouse Move Here</button>
+	<button onmouseout="out()">Mouse Move Here Then Out The Button</button>
+	<button onmouseover="over()">Mouse Hover Here</button>
+	<button onmouseenter="enter()">Mouse Enter The Button</button>
+	<button onmouseleave="exit()">Mouse Exit The Button</button>
+	<h1 id="h1"></h1>
+</body>
+<script>
+	
+	function one(){
+		document.getElementById('h1').innerHTML="Mouse Click One Time."
+	}
+
+	function doubleclick(){
+		document.getElementById('h1').innerHTML="Double Time Mouse Clicked."
+	}
+
+	function down(){
+		document.getElementById('h1').innerHTML="Mouse is Down."
+	}
+
+	function up(){
+		document.getElementById('h1').innerHTML="Mouse is up."
+	}
+
+	function move(){
+		document.getElementById('h1').innerHTML="Mouse is Move in button."
+	}
+
+	function out(){
+		document.getElementById('h1').innerHTML="Mouse is out of button."
+	}
+
+	function over(){
+		document.getElementById('h1').innerHTML="Mouse is hover in button."
+	}
+
+	function enter(){
+		document.getElementById('h1').innerHTML="Mouse is Enter in button."
+	}
+
+	function exit(){
+		document.getElementById('h1').innerHTML="Mouse is Exit in button."
+	}
+
+
+
+
+</script>
+</html>
