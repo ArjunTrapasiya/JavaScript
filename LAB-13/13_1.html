@@ -1,0 +1,48 @@
+<!-- 1. Write a program to greet the user according to the current time 
+For example, if a user opens the page at 08:00 AM, the program should display 
+“Good Morning”. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Greeting to User</title>
+</head>
+<body>
+	<h1 id="Greeting"></h1>
+</body>
+<script>
+	var name=prompt("Enter Your Name: ");
+	var dt=new Date();
+	var hour=dt.getHours();
+	var massage=document.getElementById("Greeting");
+
+	if(hour<=3)
+	{
+		massage.innerHTML=`Why Are you not Sleep ? Go to Bed And Try To Sleep  ${name}.`;
+	}
+	else if(hour<5)
+	{
+		massage.innerHTML=`Very Good Morning ${name}.`;
+	}
+	else if(hour<12)
+	{
+		massage.innerHTML=`Good Morning ${name}.`;
+	}
+	else if(hour<16)
+	{
+		massage.innerHTML=`Good Afternoon ${name}.`;
+	}
+	else if(hour<19)
+	{
+		massage.innerHTML=`Good Evening ${name}.`;
+	}
+	else if(hour<22)
+	{
+		massage.innerHTML=`Time To Sleep so Go to Bed ${name}.`;
+	}
+	else
+	{
+		massage.innerHTML=`Good Night ${name}.`;
+	}
+</script>
+</html>

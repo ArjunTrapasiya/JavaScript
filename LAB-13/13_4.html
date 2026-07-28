@@ -1,0 +1,44 @@
+<!-- Write a program to take a character input from the user and display whether the 
+key pressed is a number, an alphabet, or a symbol. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display Input Is Number,Character or Symbol</title>
+</head>
+<body>
+	<p>Press Any Key <input type="text" onkeypress="checkKey(event)"></p>
+	
+	<h1 id="result"></h1>
+
+	<script>
+
+		function checkKey(event)
+		{
+		    var ch=event.key;
+
+		    if (ch>='0' && ch<='9')
+		    {
+		        document.getElementById("result").innerHTML="Enter Key is Number.";
+		    }
+
+		    else if ((ch>='A' && ch<='Z')||(ch>='a' && ch<='z'))
+		    {
+		        document.getElementById("result").innerHTML="Enter Key is Alphabet.";
+		    }
+
+		    else if(ch == " ")
+		    {
+		    	document.getElementById("result").innerHTML="Enter Key is Spacebar.";
+		    }
+
+		    else
+		    {
+		        document.getElementById("result").innerHTML="Enter Key is Symbol.";
+		    }
+		}
+
+	</script>
+
+</body>
+</html>
