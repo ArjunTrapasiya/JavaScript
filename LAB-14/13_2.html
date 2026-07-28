@@ -1,0 +1,21 @@
+<!-- Write a program to recognize which keyboard event is fired. -->
+<!-- for down value show press backspace -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Key-Board Event</title>
+</head>
+<body>
+	<input type="text" name="" onkeydown="result('Key Down Event Performed.')" onkeypress="result('Key Press Event Performed.')" onkeyup="result('Key Up Event Performed.')">
+	<h1 id="Event"></h1>
+</body>
+<script>
+	var a=document.getElementById("Event");
+
+	function result(value)
+	{
+		a.innerHTML=value;
+	}
+</script>
+</html>
