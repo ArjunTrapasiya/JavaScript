@@ -1,0 +1,29 @@
+<!-- 5. Write a program to demonstrate callbacks in JavaScript. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Callbacks in JavaScript</title>
+</head>
+<body>
+</body>
+	
+	<script>
+			
+		function add (a,b,callback)
+		{
+			var sum=a+b;
+			callback(sum);
+		}
+
+		function display(ans)
+		{
+			document.write("Answer : "+ans);
+		}
+
+		add (13,4,display);
+
+	</script>
+
+
+</html>
