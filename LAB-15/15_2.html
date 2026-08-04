@@ -1,0 +1,35 @@
+<!-- Write a program to check whether a given number is prime or not using an arrow function in JavaScript.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime or Not Using Arrow Function</title>
+</head>
+<body>
+</body>
+<script>
+	var n = parseInt(prompt("Enter The Number: "));
+	var i,flag=true;
+	var prime=(n)=>{
+
+   if(n<=1) return false;
+		for(i=2;i<n;i++)
+		{
+			if(n%i==0)
+			{
+				return false;
+			}
+		}
+		return true;
+	};
+
+	if(prime(n)==true)
+	{
+		console.log("Number is Prime.");
+	}
+	else
+	{
+		console.log("Number is Not Prime.");
+	}
+</script>
+</html>
