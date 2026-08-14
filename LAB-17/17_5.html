@@ -1,0 +1,20 @@
+<!-- 5. Write a program to create an array containing color names in lowercase letters (e.g.,
+['red', 'green', 'blue']) and convert each array element into capitalized form using
+the map() method -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Map Function Capitalized</title>
+</head>
+<body>
+	<script>		
+		const colors = ['red', 'green', 'blue', 'yellow', 'purple'];
+		const capitalized= colors.map(color => {
+  			return color.charAt(0).toUpperCase() + color.slice(1);
+		});
+
+		console.log(capitalized); 
+	</script>
+</body>
+</html>

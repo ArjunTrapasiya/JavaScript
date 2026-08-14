@@ -1,0 +1,21 @@
+<!-- 3. Write a program to demonstrate the reduce() function of ES6 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Reduce Function</title>
+</head>
+<body>
+	<script>
+		const numbers = [10, 20, 30, 40];
+		const total = numbers.reduce((sum, num) => sum + num, 0);
+		console.log(total);
+
+		const numberss = [1, 2, 3, 4, 5];
+		const sum = numberss.reduce(function(accumulator, number) {
+		return accumulator + number;
+		}, 0);
+		console.log(sum);
+	</script>
+</body>
+</html>
