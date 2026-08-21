@@ -1,0 +1,26 @@
+<!--1.Write a program to demonstrate the use of object destructuring in JavaScript.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Object Destructuring</title>
+</head>
+<body>
+	<script>
+
+		var student = {
+			name: "Arjun",
+			age: 18,
+			course: "BCA",
+			city: "Rajkot"
+		};
+
+		var { name, age, course, city } = student;
+
+		console.log("Student Name:", name);
+		console.log("Age:", age);
+		console.log("Course:", course);
+		console.log("City:", city);
+	</script>
+</body>
+</html>
