@@ -1,0 +1,11 @@
+Demonstration of ReactJS.
+1.
+Setting up react environment. (A)
+2.
+Hello world webapp using ReactJS. (A)
+3.
+Demonstrate the use of JSX in ReactJS. (A)
+4.
+Write a program to create a simple class component in ReactJS. (A)
+5.
+Write a program to create a simple functional component in ReactJS. (A)
